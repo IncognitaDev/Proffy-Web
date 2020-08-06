@@ -19,7 +19,8 @@
 }
 
 .teacher-item header div {
-  max-width: 2.4rem;
+  max-width: 24rem;
+  margin-left: 2rem;
 }
 
 .teacher-item header div strong {
@@ -43,12 +44,12 @@
 .teacher-item footer {
   padding: 3.2rem 2rem;
   background: var(--color-box-footer);
-  border-top: 1px solid var(--color-line-white) ;
+  border-top: 1px solid var(--color-line-white);
   margin-top: 3.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}
 
 .teacher-item footer p strong {
   color: var(--color-primary);
@@ -56,7 +57,7 @@
   display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secondary);
@@ -68,16 +69,17 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  transition: .2s;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-.teacher-item footer button {
+.teacher-item footer a:hover {
   background: var(--color-secondary-dark);
 }
 
 @media (min-width: 700px) {
   .teacher-item header,
-  .teacher-item footer{
+  .teacher-item footer {
     padding: 3.2rem;
   }
 
@@ -85,7 +87,7 @@
     padding: 0 3.2rem;
   }
 
-  .teacher-item footer p strong{
+  .teacher-item footer p strong {
     display: initial;
     margin-left: 1.6rem;
   }
@@ -96,7 +98,7 @@
     justify-content: center;
   }
 
-  .teacher-item footer button img{
+  .teacher-item footer button img {
     margin-right: 1.6rem;
   }
 }
