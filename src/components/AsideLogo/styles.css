@@ -1,0 +1,23 @@
+.aside-page {
+  display: flex;
+
+  height: 100vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+}
+
+.aside-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-image: url("../../assets/images/success-background.svg");
+  background-size: cover;
+}
+
+.aside-page img {
+  width: 30rem;
+}

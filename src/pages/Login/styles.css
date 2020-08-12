@@ -1,0 +1,9 @@
+.login-page {
+  display: flex;
+}
+.login-content {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
