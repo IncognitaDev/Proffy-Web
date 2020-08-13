@@ -5,6 +5,7 @@ import Landing from './pages/Landing'
 import TeacherForm from './pages/TeacherForm'
 import TeacherList from './pages/TeacherList'
 import Success from './components/Success'
+import Login from './pages/Login'
 
 function Routes(){
   return (
@@ -14,6 +15,7 @@ function Routes(){
         <Route path='/study'  component={TeacherList}/>
         <Route path='/give-classes'  component={TeacherForm}/>
         <Route path='/success' component={Success}/>
+        <Route path='/login' component={Login}/>
       </Switch>
     </BrowserRouter>
   )

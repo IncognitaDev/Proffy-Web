@@ -60,7 +60,7 @@ function TeacherForm(){
 
   return (    
   <div id="page-teacher-form" className="container">
-    <PageHeader title='Que incrível que voce quer dar aulas' description='O Primeiro passo é preencher esse formulário de inscrição'/>
+    <PageHeader title='Que incrível que voce quer dar aulas' description='O Primeiro passo é preencher esse formulário de inscrição' titlePage='Dar Aula'/>
 
     <main>
       <form onSubmit={e => handleCreateClass(e)}>
