@@ -10,14 +10,22 @@
 
 .aside-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80%;
   width: 80%;
   background-image: url("../../assets/images/success-background.svg");
-  background-size: cover;
+  background-size: 550px;
+
 }
 
 .aside-page img {
   width: 30rem;
+}
+
+.aside-content p {
+  color: var(--color-text-in-primary);
+  font-size: 20px;
+  width: 300px;
 }

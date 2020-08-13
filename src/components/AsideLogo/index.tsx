@@ -9,6 +9,7 @@ const AsideLogo: React.FC = () => {
     <div className='aside-page'>
       <div className='aside-content'>
         <img src={Logo} alt='Proffy'/>
+        <p>Sua plataforma de estudos online</p>
       </div>
     </div>
   );

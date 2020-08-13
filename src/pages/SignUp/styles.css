@@ -1,0 +1,10 @@
+.signup-page{
+  display: flex;
+}
+
+.signup-content {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
