@@ -7,6 +7,7 @@ const NavHeader: React.FC = (props) => {
     <nav className='nav-header'>
       <div className='nav-header-content'>
         {props.children}
+        
       </div>
     </nav>
   );
