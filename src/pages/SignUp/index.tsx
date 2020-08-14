@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import AsideLogo from '../../components/AsideLogo'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
-import Modal from 'react-modal'
-
 import './styles.css';
+import Success from '../../components/Success';
 
 const SignUp: React.FC = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <>
+    {!modal && 
     <div className='signup-page'>
       <div className='signup-content'>
          <form action="">
@@ -24,9 +27,11 @@ const SignUp: React.FC = () => {
       </div>
       <AsideLogo/>
     </div>
-    <Modal>
-      
-    </Modal>
+    }
+    {modal && 
+      <Success title='Cadastro concluído' description='Agora você faz parte da plataforma da Proffy.
+      Tenha uma ótima experiência.' button='Fazer login'/>  
+    }
     </>
   );
 }

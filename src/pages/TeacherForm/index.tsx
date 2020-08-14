@@ -9,11 +9,14 @@ import warningIcon from "../../assets/images/icons/warning.svg";
 import Textarea from '../../components/Textarea';
 import Select from '../../components/Select';
 import api from '../../services/api';
+import Success from '../../components/Success'
 
 function TeacherForm(){
   const [scheduleItems, setScheduleItems] = useState([{week_day: 0, from: '', to: '' }])
   const [personalInfo, setPersonalInfo] = useState({ name: '', avatar: '', whatsapp: '', bio: ''})
   const [classInfo , setClassInfo] = useState({ subject: '', cost: ''})
+
+  const [modal, setModal] = useState(false)
 
   const history = useHistory()
 
@@ -58,8 +61,11 @@ function TeacherForm(){
     )
   }
 
-  return (    
-  <div id="page-teacher-form" className="container">
+  return ( 
+    <>
+    {!modal && 
+
+      <div id="page-teacher-form" className="container">
     <PageHeader title='Que incrível que voce quer dar aulas' description='O Primeiro passo é preencher esse formulário de inscrição' titlePage='Dar Aula'/>
 
     <main>
@@ -145,11 +151,17 @@ function TeacherForm(){
           Preencha todos os campos
         </p>
 
-        <button type='submit'>Salvar todos os dados</button>
+        <button type='submit'>Salvar todos os dados</button>o
       </footer>
       </form>
     </main>
   </div>
+    } 
+    {modal && 
+      <Success title='Cadastro salvo!' description='Tudo certo, seu cadastro está na nossa lista de professores.
+      Agora é só ficar de olho no seu WhatsApp.' button='Acessar lista'/>
+    }
+    </>
   )
 }
 
