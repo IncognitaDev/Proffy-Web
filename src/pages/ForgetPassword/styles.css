@@ -1,0 +1,9 @@
+.forget-page {
+  display: flex;
+}
+.forget-content {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
