@@ -5,11 +5,14 @@ import AsideLogo from '../../components/AsideLogo'
 import './styles.css'
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import NavHeader from '../../components/NavHeader';
 
 const Login: React.FC = () => {
   return (
     <div className='login-page'>
+      <NavHeader/>
       <AsideLogo/>
+    
       <div className="login-content">
         <form action="">
           <h1>Fazer login</h1>

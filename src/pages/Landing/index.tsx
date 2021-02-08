@@ -23,7 +23,7 @@ function Landing(){
 
   return (
     <div id="page-landing">
-      <div className="container" id="page-landing-container">
+      <div className='page-landing-top'>
       <NavHeader>
         <div className="user-info">
           <img src='https://avatars2.githubusercontent.com/u/48053804?s=460&u=41a09241f1f585f000c86e67bf3b6147aed66ed6&v=4' alt=''/>
@@ -31,6 +31,7 @@ function Landing(){
         </div>
         <button className='login-button'><FiPower size={20} className='icon'/></button>
       </NavHeader>
+      <div className="container" id="page-landing-container">
         <div className="logo-container">
           <img src={logoImg} alt="Proffy"/>
           <h2>Sua plataforma de estudos online</h2>
@@ -41,8 +42,12 @@ function Landing(){
           alt="Plataforma de Estudos" 
           className="hero-image"
         />
-
-        <div className='welcome-text'>
+      </div>
+      </div>
+      <div className='page-landing-bottom'>
+      <div className="container" id="page-landing-container-footer">
+        
+      <div className='welcome-text'>
           <p>Seja bem-vindo, <br/>
             <strong>O que deseja Fazer?</strong>
           </p>
@@ -62,6 +67,7 @@ function Landing(){
           Total de {totalConnections} conexões já realizadas
           <img src={purpleHeartIcon} alt='Coração roxo'/>
         </span>
+      </div>
       </div>
     </div>
   )
